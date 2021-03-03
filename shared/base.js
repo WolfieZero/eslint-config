@@ -6,6 +6,7 @@ module.exports = {
       {
         replacements: {
           props: false,
+          env: false,
         },
       },
     ],
