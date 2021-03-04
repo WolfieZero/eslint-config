@@ -57,22 +57,24 @@ the last item to include (if you want it).
 ## VSCode User?
 
 Make sure you have [ESLint extention][eslintvscode] installed and add the
-following into the project's settings file (`/.vscode/settings.json`)
+following into the project's settings file (`/.vscode/settings.json`) (deleting
+as appropriate).
 
 ```json
 {
-  "editor.formatOnSave": true
-}
-```
-
-If using TypeScript then you may want the following
-
-```json
-{
-  "typescript.format.enable": false,
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "typescript.format.enable": false,
   "editor.formatOnSave": true
 }
 ```
