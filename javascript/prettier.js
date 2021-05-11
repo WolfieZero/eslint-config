@@ -1,5 +1,9 @@
+const { rules } = require('../shared/prettier');
+
 module.exports = {
-  ...require('../shared/prettier'),
   plugins: ['prettier', 'unicorn'],
   extends: ['prettier', 'prettier/unicorn'],
+  rules: {
+    ...rules,
+  },
 };

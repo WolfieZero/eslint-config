@@ -1,3 +1,5 @@
+const { rules } = require('../shared/base');
+
 module.exports = {
   ...require('../shared/base'),
   parser: '@typescript-eslint/parser',
@@ -9,7 +11,7 @@ module.exports = {
     'plugin:unicorn/recommended',
   ],
   rules: {
-    'no-console': ['warn', { allow: ['info', 'warn', 'error', 'debug', 'table'] }],
+    ...rules,
     'unicorn/prevent-abbreviations': [
       'warn',
       {
